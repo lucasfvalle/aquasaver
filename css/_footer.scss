@@ -1,0 +1,284 @@
+footer{
+    margin-top: auto;
+    background-color: $background-color-primary;
+    color: $font-color-primary;
+    font-weight: bolder;
+    justify-content: center;    
+    .footer-container{
+        padding-top: 3em;       
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;   
+        .footer-content{
+            width: 1024px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+        .about-enterprise{    
+            line-height: 1.5;
+            width: 200px;
+            text-align: left;
+            p{
+                
+                color: #303030
+            }
+            .social-media{
+                line-height: 1.5;
+                text-align: left;
+                padding: 1em 0;
+                h2{
+                    font-size: 18px;
+                }
+                .social-icons{
+                    color: #303030;
+                    i{
+                        transform: scale(1);
+                        font-size: 24px;
+                        &:hover{
+                            color: #000;
+                            cursor:pointer;
+                            font-size: 25px;
+                            padding: 0px 5px;
+                            transition: all ease 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-menu{
+            width: 200px;
+            a{
+                display: flex;
+                line-height: 1.5;
+                flex-direction: column;
+                text-decoration: underline;
+                color: #303030;
+                &:hover{
+                    color: #000;
+                    transition: 0.5s;
+                }
+            }
+        }
+        .footer-products{
+            width: 200px;
+            a{
+                display: flex;
+                line-height: 1.5;
+                flex-direction: column;
+                text-decoration: underline;
+                color: #303030;
+                &:hover{
+                    color: #000;
+                    transition: 0.5s;
+                }
+            }
+        }
+        .footer-copyright{
+            margin-top: 3em;
+            padding: 1em 0px;
+            font-size:14px;
+            font-weight: bold;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            color: $content-font-color;
+            width: 100vw;
+            height: fit-content;
+            background-color: #ccc;
+            p{
+                width: 90vw;
+            }
+        }
+    }
+    /* Mobile */
+    @media all and (max-width: 1024px)
+    {
+        .footer-container{
+            padding-top: 3em;       
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;   
+            
+            .footer-content{
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            .about-enterprise{    
+                line-height: 1.5;
+                width: 80vw;
+                text-align: center;
+                p{
+                    
+                    color: #303030
+                }
+                .social-media{
+                    line-height: 1.5;
+                    text-align: center;
+                    padding: 1em 0;
+
+                    h2{
+                        font-size: 18px;
+                    }
+                    .social-icons{
+                        text-decoration: none;
+                        &:hover{
+                            transform: scale(1.1);
+                            transition: all ease 0.5s;
+                        }
+                    
+                            
+                        }
+                }
+            }
+            
+            .footer-menu{
+                text-align: center;
+                width: 100vw;
+                a{
+                    display: flex;
+                    line-height: 1.5;
+                    flex-direction: column;
+                    text-decoration: underline;
+                    color: #303030;
+                    &:hover{
+                        color: #000;
+                        transition: 0.5s;
+                    }
+                }
+            }
+            .footer-products{
+                text-align: center;
+                width: 100vw;
+                a{
+                    display: flex;
+                    line-height: 1.5;
+                    flex-direction: column;
+                    text-decoration: underline;
+                    color: #303030;
+                    &:hover{
+                        color: #000;
+                        transition: 0.5s;
+                    }
+                }
+            }
+            .footer-copyright{
+                text-align: center;
+                margin-top: 3em;
+                padding: 2em 0px;
+                font-size:14px;
+                font-weight: bold;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                color: $content-font-color;
+                width: 100vw;
+                
+                
+                background-color: #ccc;
+                p{
+                    width: 80vw;
+                }
+            }
+        }
+    }
+    @media all and (max-width: 480px)
+    {
+        .footer-container{
+            padding-top: 3em;       
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;   
+            
+            .footer-content{
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+            }
+            .about-enterprise{    
+                line-height: 1.5;
+                width: 80vw;
+                text-align: center;
+                p{
+                    
+                    color: #303030
+                }
+                .social-media{
+                    line-height: 1.5;
+                    text-align: center;
+                    padding: 1em 0;
+
+                    h2{
+                        font-size: 18px;
+                    }
+                    .social-icons{
+                        text-decoration: none;
+                        &:hover{
+                            transform: scale(1.1);
+                            transition: all ease 0.5s;
+                        }
+                    
+                            
+                        }
+                }
+            }
+            
+            .footer-menu{
+                text-align: center;
+                width: 100vw;
+                a{
+                    display: flex;
+                    line-height: 1.5;
+                    flex-direction: column;
+                    text-decoration: underline;
+                    color: #303030;
+                    &:hover{
+                        color: #000;
+                        transition: 0.5s;
+                    }
+                }
+            }
+            .footer-products{
+                text-align: center;
+                width: 100vw;
+                a{
+                    display: flex;
+                    line-height: 1.5;
+                    flex-direction: column;
+                    text-decoration: underline;
+                    color: #303030;
+                    &:hover{
+                        color: #000;
+                        transition: 0.5s;
+                    }
+                }
+            }
+            .footer-copyright{
+                text-align: center;
+                margin-top: 3em;
+                padding: 2em 0px;
+                font-size:14px;
+                font-weight: bold;
+                display: flex;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                color: $content-font-color;
+                width: 100vw;
+                
+                
+                background-color: #ccc;
+                p{
+                    width: 80vw;
+                }
+            }
+        }
+    }   
+}

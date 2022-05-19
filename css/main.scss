@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* Variaveis globais */
+$font-color: (#fff);
+$font-color-primary: (#386de0);
+$content-font-color:(#303030);
+$default-font:('Roboto', sans-serif);
+$background-color:(#386de0);
+$background-color-primary:(#fff);
+
+/* Imports */
+@import 'base';
+@import 'header';
+@import 'main';
+@import 'footer';

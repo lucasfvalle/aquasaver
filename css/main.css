@@ -1,0 +1,1484 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+/* Variaveis globais */
+/* Imports */
+* {
+  margin: 0 auto;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  background-color: #fff;
+  /*.activeScroll{
+        display: none;
+    }*/
+}
+
+@media all and (max-width: 480px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+body .scrollDown {
+  display: none;
+  color: red;
+  font-size: 32px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+header {
+  color: #fff;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("../img/bgBlue.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /* Desktop */
+  /* Mobile */
+}
+
+@media screen and (max-width: 1920px) {
+  header .header-container {
+    height: auto;
+  }
+  header .header-container .mobile-btn {
+    display: none;
+  }
+  header .header-container .header-logo {
+    margin: 10px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .header-container .header-logo img {
+    width: 100px;
+  }
+  header .header-container nav .nav-list {
+    list-style: none;
+    width: auto;
+  }
+  header .header-container nav .nav-list .nav-list-item {
+    text-decoration: none;
+    color: #dfdfdf;
+    font-weight: 600;
+  }
+  header .header-container nav .nav-list .nav-list-item li {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding-left: 1em;
+  }
+  header .header-container nav .nav-list .nav-list-item li:hover {
+    color: #fff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  header .header-container .desktop-buy-button .desktop-btn-buy {
+    border-radius: 20px;
+    border: border-box;
+    border: 1px solid #fff;
+    margin-left: 1em;
+    height: 30px;
+    width: 100px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+  }
+  header .header-container .desktop-buy-button .desktop-btn-buy:hover {
+    background-color: #fff;
+    color: #303030;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  header .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    width: 100vw;
+  }
+  header .header-container .desktop-buy-button {
+    display: none;
+  }
+  header .header-container .header-logo {
+    margin: 10px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    font-size: 48px;
+  }
+  header .header-container .header-logo img {
+    width: 124px;
+  }
+  header .header-container nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* Toggle */
+  }
+  header .header-container nav .nav-list {
+    display: none;
+    list-style: none;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  header .header-container nav .nav-list .nav-list-item {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+  }
+  header .header-container nav .nav-list .nav-list-item li {
+    display: block;
+    padding-bottom: 10px;
+  }
+  header .header-container nav .active {
+    display: block;
+  }
+  header .header-container .mobile-btn {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0px 10px;
+    opacity: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-container .mobile-btn a {
+    text-decoration: none;
+  }
+  header .header-container .mobile-btn a i {
+    color: #fff;
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header .header-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    width: 100vw;
+  }
+  header .header-container .desktop-buy-button {
+    display: none;
+  }
+  header .header-container .header-logo {
+    margin: 10px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100vw;
+    font-size: 48px;
+  }
+  header .header-container .header-logo img {
+    width: 124px;
+  }
+  header .header-container nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    /* Toggle */
+  }
+  header .header-container nav .nav-list {
+    display: none;
+    list-style: none;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  header .header-container nav .nav-list .nav-list-item {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+  }
+  header .header-container nav .nav-list .nav-list-item li {
+    display: block;
+    padding-bottom: 10px;
+  }
+  header .header-container nav .active {
+    display: block;
+  }
+  header .header-container .mobile-btn {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 0px 10px;
+    opacity: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .header-container .mobile-btn a {
+    text-decoration: none;
+  }
+  header .header-container .mobile-btn a i {
+    color: #fff;
+    font-size: 32px;
+  }
+}
+
+main {
+  /* Desktop */
+  /* Mobile */
+}
+
+@media screen and (max-width: 1920px) {
+  main .presentation-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+    color: #386de0;
+    padding: 2em 0;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 1024px;
+  }
+  main .presentation-container figure {
+    width: 20vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  main .presentation-container figure img {
+    width: 350px;
+    border-radius: 30px;
+  }
+  main .presentation-container article {
+    width: 40vw;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .presentation-container article h1 {
+    margin-top: 1em;
+    text-align: left;
+    font-size: 28px;
+    font-weight: bolder;
+  }
+  main .presentation-container article p {
+    text-align: left;
+    margin-top: 1em;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+  }
+  main .presentation-container .btn-group {
+    margin-top: 1em;
+    text-decoration: none;
+  }
+  main .presentation-container .btn-group a {
+    text-decoration: none;
+  }
+  main .presentation-container .btn-group .btn {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+    cursor: pointer;
+    margin-right: 1em;
+  }
+  main .presentation-container .btn-group .buy {
+    background-color: #386de0;
+    color: #fff;
+    cursor: pointer;
+  }
+  main .presentation-container .btn-group .buy:hover {
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    background-color: #517cd8;
+  }
+  main .presentation-container .btn-group .about {
+    background-color: #ccc;
+  }
+  main .presentation-container .btn-group .about:hover {
+    background-color: #ebebeb;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  main .benefits-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: #386de0;
+    padding: 2em 0px;
+    width: 1024px;
+    border-radius: 20px;
+  }
+  main .benefits-container h1 {
+    text-align: center;
+    font-size: 34px;
+  }
+  main .benefits-container .beneficios-description {
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+    margin-top: 1em;
+  }
+  main .benefits-container .beneficios-description p {
+    width: 50%;
+  }
+  main .benefits-container article {
+    width: 25%;
+    margin-top: 3em;
+  }
+  main .benefits-container article .icon-container {
+    text-align: center;
+  }
+  main .benefits-container article .icon-container i {
+    font-size: 56px;
+  }
+  main .benefits-container article h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+  main .benefits-container article p {
+    font-size: 18px;
+    text-align: center;
+  }
+  main .benefits-container .hover-benefits {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  main .benefits-container .hover-benefits:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    cursor: pointer;
+  }
+  main .product-container {
+    background-color: #fff;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 2em;
+    width: 1024px;
+  }
+  main .product-container article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 2em;
+  }
+  main .product-container article .product-container-content {
+    width: 50%;
+  }
+  main .product-container article .product-container-content h1 {
+    color: #386de0;
+    font-size: 36px;
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+  }
+  main .product-container article .product-container-content p {
+    margin-top: 1em;
+    color: #303030;
+    width: 100%;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  main .product-container article .product-container-image {
+    width: 40%;
+  }
+  main .product-container article .product-container-image figure {
+    margin: 1em 0;
+    text-align: center;
+  }
+  main .product-container article .product-container-image figure img {
+    width: 300px;
+    border-radius: 20px;
+  }
+  main .product-container article .product-container-image .color-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  main .product-container article .product-container-image .color-description .color-icon {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+  }
+  main .product-container article .product-container-image .color-description .color-icon:hover {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  main .product-container article .product-container-image .color-description .blue {
+    color: #3777c6;
+  }
+  main .product-container article .product-container-image .color-description .black {
+    color: #000;
+  }
+  main .product-container article .product-container-image .color-description .offwhite {
+    color: #ccb487;
+  }
+  main .product-container article .product-container-image .color-description .gray {
+    color: #9d9c97;
+  }
+  main .product-container article .product-container-image .color-description .brown {
+    color: #835e55;
+  }
+  main .product-container article .product-container-image .color-description .green {
+    color: #41b5a2;
+  }
+  main .howtouse-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 1em;
+    background-color: #386de0;
+    width: 1024px;
+    border-radius: 20px;
+  }
+  main .howtouse-container i {
+    font-size: 36px;
+  }
+  main .howtouse-container h1 {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 36px;
+    width: 100vw;
+  }
+  main .howtouse-container P {
+    margin-top: 1em;
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  main .howtouse-container .card-step {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    padding: 10px 0px;
+  }
+  main .howtouse-container .card-step p {
+    font-size: 20px;
+    width: 80%;
+  }
+  main .howtouse-container .card-step img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  main .howtouse-container .card-step:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  main .presentation-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+    color: #386de0;
+    padding-bottom: 2em;
+    font-weight: 300;
+    width: 100vw;
+  }
+  main .presentation-container figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100vw;
+  }
+  main .presentation-container figure img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+  main .presentation-container article {
+    width: 100vw;
+  }
+  main .presentation-container article h1 {
+    margin-top: 1em;
+    text-align: center;
+    width: 100vw;
+    font-size: 28px;
+  }
+  main .presentation-container article p {
+    text-align: center;
+    width: 40vw;
+    margin-top: 1em;
+    font-size: 16px;
+    color: #303030;
+    font-weight: 600;
+  }
+  main .presentation-container .btn-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 10vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 1em;
+            column-gap: 1em;
+    margin-top: 1em;
+  }
+  main .presentation-container .btn-group .btn {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  }
+  main .presentation-container .btn-group .buy {
+    background-color: #386de0;
+    color: #fff;
+  }
+  main .presentation-container .btn-group .about {
+    background-color: #ccc;
+  }
+  main .benefits-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: #386de0;
+    padding: 2em 0px;
+    width: 100vw;
+    border-radius: 0;
+  }
+  main .benefits-container h1 {
+    width: 100vw;
+    text-align: center;
+    font-size: 24px;
+  }
+  main .benefits-container .beneficios-description {
+    margin-top: 1em;
+    font-size: 16px;
+    text-align: center;
+    width: 100vw;
+  }
+  main .benefits-container .beneficios-description p {
+    width: 50vw;
+  }
+  main .benefits-container article {
+    margin-top: 2em;
+    width: 100vw;
+  }
+  main .benefits-container article .icon-container {
+    text-align: center;
+    width: 100vw;
+  }
+  main .benefits-container article .icon-container i {
+    font-size: 56px;
+  }
+  main .benefits-container article h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  main .benefits-container article p {
+    font-size: 16px;
+    width: 30vw;
+    text-align: center;
+  }
+  main .product-container {
+    background-color: #fff;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 2em;
+    width: 100vw;
+  }
+  main .product-container article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 2em;
+    width: 100vw;
+  }
+  main .product-container article .product-container-content {
+    width: 100vw;
+  }
+  main .product-container article .product-container-content h1 {
+    color: #386de0;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100vw;
+    text-align: center;
+  }
+  main .product-container article .product-container-content p {
+    margin-top: 1em;
+    color: #303030;
+    width: 50vw;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  main .product-container article .product-container-image {
+    width: 100vw;
+  }
+  main .product-container article .product-container-image figure {
+    margin: 1em 0;
+    text-align: center;
+  }
+  main .product-container article .product-container-image figure img {
+    width: 200px;
+    border-radius: 20px;
+  }
+  main .product-container article .product-container-image .color-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 20vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 24px;
+  }
+  main .product-container article .product-container-image .color-description .blue {
+    color: #3777c6;
+  }
+  main .product-container article .product-container-image .color-description .black {
+    color: #000;
+  }
+  main .product-container article .product-container-image .color-description .offwhite {
+    color: #ccb487;
+  }
+  main .product-container article .product-container-image .color-description .gray {
+    color: #9d9c97;
+  }
+  main .product-container article .product-container-image .color-description .brown {
+    color: #835e55;
+  }
+  main .product-container article .product-container-image .color-description .green {
+    color: #41b5a2;
+  }
+  main .howtouse-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 2em;
+    width: 100vw;
+    border-radius: 0;
+  }
+  main .howtouse-container i {
+    font-size: 24px;
+  }
+  main .howtouse-container h1 {
+    text-align: center;
+    margin: 1em 0px;
+    font-size: 24px;
+    width: 100vw;
+  }
+  main .howtouse-container P {
+    font-size: 16px;
+    width: 50vw;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  main .howtouse-container .card-step {
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  main .howtouse-container .card-step p {
+    font-size: 16px;
+    width: 20vw;
+  }
+  main .howtouse-container .card-step img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main .presentation-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #fff;
+    color: #386de0;
+    padding-bottom: 2em;
+    font-weight: 300;
+    width: 100vw;
+  }
+  main .presentation-container figure {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100vw;
+  }
+  main .presentation-container figure img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  main .presentation-container article {
+    width: 100vw;
+  }
+  main .presentation-container article h1 {
+    margin-top: 1em;
+    text-align: center;
+    width: 100vw;
+    font-size: 28px;
+    font-weight: bolder;
+  }
+  main .presentation-container article p {
+    text-align: center;
+    width: 80vw;
+    margin-top: 1em;
+    font-size: 16px;
+    color: #303030;
+    font-weight: 600;
+  }
+  main .presentation-container .btn-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-column-gap: 1em;
+            column-gap: 1em;
+    margin-top: 1em;
+  }
+  main .presentation-container .btn-group .btn {
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    -webkit-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+            box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+  }
+  main .presentation-container .btn-group .buy {
+    background-color: #386de0;
+    color: #fff;
+  }
+  main .presentation-container .btn-group .about {
+    background-color: #ccc;
+  }
+  main .benefits-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: #386de0;
+    padding: 2em 0px;
+    width: 100vw;
+    border-radius: 0;
+  }
+  main .benefits-container h1 {
+    width: 100vw;
+    text-align: center;
+    font-size: 24px;
+  }
+  main .benefits-container .beneficios-description {
+    font-size: 16px;
+    text-align: center;
+    width: 80vw;
+    margin-top: 1em;
+  }
+  main .benefits-container .beneficios-description p {
+    width: 80vw;
+  }
+  main .benefits-container article {
+    margin-top: 2em;
+    width: 100vw;
+  }
+  main .benefits-container article .icon-container {
+    text-align: center;
+    width: 100vw;
+  }
+  main .benefits-container article .icon-container i {
+    font-size: 56px;
+  }
+  main .benefits-container article h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+  main .benefits-container article p {
+    font-size: 16px;
+    width: 50vw;
+    text-align: center;
+  }
+  main .product-container {
+    background-color: #fff;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 2em;
+    width: 100vw;
+  }
+  main .product-container article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 2em;
+    width: 100vw;
+  }
+  main .product-container article .product-container-content {
+    width: 100vw;
+  }
+  main .product-container article .product-container-content h1 {
+    color: #386de0;
+    font-size: 24px;
+    font-weight: bold;
+    width: 100vw;
+    text-align: center;
+  }
+  main .product-container article .product-container-content p {
+    margin-top: 1em;
+    color: #303030;
+    width: 85vw;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  main .product-container article .product-container-image {
+    width: 100vw;
+  }
+  main .product-container article .product-container-image figure {
+    margin: 1em 0;
+    text-align: center;
+  }
+  main .product-container article .product-container-image figure img {
+    width: 200px;
+    border-radius: 20px;
+  }
+  main .product-container article .product-container-image .color-description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 50vw;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-size: 24px;
+  }
+  main .product-container article .product-container-image .color-description .blue {
+    color: #3777c6;
+  }
+  main .product-container article .product-container-image .color-description .black {
+    color: #000;
+  }
+  main .product-container article .product-container-image .color-description .offwhite {
+    color: #ccb487;
+  }
+  main .product-container article .product-container-image .color-description .gray {
+    color: #9d9c97;
+  }
+  main .product-container article .product-container-image .color-description .brown {
+    color: #835e55;
+  }
+  main .product-container article .product-container-image .color-description .green {
+    color: #41b5a2;
+  }
+  main .howtouse-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding-bottom: 2em;
+    width: 100vw;
+    border-radius: 0;
+  }
+  main .howtouse-container i {
+    font-size: 24px;
+  }
+  main .howtouse-container h1 {
+    text-align: center;
+    margin: 1em 0px;
+    font-size: 24px;
+    width: 100vw;
+  }
+  main .howtouse-container P {
+    font-size: 16px;
+    width: 80vw;
+    text-align: center;
+    margin-bottom: 2em;
+  }
+  main .howtouse-container .card-step {
+    width: 100vw;
+    text-align: center;
+    margin-bottom: 1em;
+  }
+  main .howtouse-container .card-step p {
+    font-size: 16px;
+    width: 50vw;
+  }
+  main .howtouse-container .card-step img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+}
+
+footer {
+  margin-top: auto;
+  background-color: #fff;
+  color: #386de0;
+  font-weight: bolder;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* Mobile */
+}
+
+footer .footer-container {
+  padding-top: 3em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+footer .footer-container .footer-content {
+  width: 1024px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+footer .footer-container .about-enterprise {
+  line-height: 1.5;
+  width: 200px;
+  text-align: left;
+}
+
+footer .footer-container .about-enterprise p {
+  color: #303030;
+}
+
+footer .footer-container .about-enterprise .social-media {
+  line-height: 1.5;
+  text-align: left;
+  padding: 1em 0;
+}
+
+footer .footer-container .about-enterprise .social-media h2 {
+  font-size: 18px;
+}
+
+footer .footer-container .about-enterprise .social-media .social-icons {
+  color: #303030;
+}
+
+footer .footer-container .about-enterprise .social-media .social-icons i {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  font-size: 24px;
+}
+
+footer .footer-container .about-enterprise .social-media .social-icons i:hover {
+  color: #000;
+  cursor: pointer;
+  font-size: 25px;
+  padding: 0px 5px;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+footer .footer-container .footer-menu {
+  width: 200px;
+}
+
+footer .footer-container .footer-menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: underline;
+  color: #303030;
+}
+
+footer .footer-container .footer-menu a:hover {
+  color: #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .footer-container .footer-products {
+  width: 200px;
+}
+
+footer .footer-container .footer-products a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  line-height: 1.5;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: underline;
+  color: #303030;
+}
+
+footer .footer-container .footer-products a:hover {
+  color: #000;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+footer .footer-container .footer-copyright {
+  margin-top: 3em;
+  padding: 1em 0px;
+  font-size: 14px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #303030;
+  width: 100vw;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #ccc;
+}
+
+footer .footer-container .footer-copyright p {
+  width: 90vw;
+}
+
+@media all and (max-width: 1024px) {
+  footer .footer-container {
+    padding-top: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .footer-container .footer-content {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer .footer-container .about-enterprise {
+    line-height: 1.5;
+    width: 80vw;
+    text-align: center;
+  }
+  footer .footer-container .about-enterprise p {
+    color: #303030;
+  }
+  footer .footer-container .about-enterprise .social-media {
+    line-height: 1.5;
+    text-align: center;
+    padding: 1em 0;
+  }
+  footer .footer-container .about-enterprise .social-media h2 {
+    font-size: 18px;
+  }
+  footer .footer-container .about-enterprise .social-media .social-icons {
+    text-decoration: none;
+  }
+  footer .footer-container .about-enterprise .social-media .social-icons:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  footer .footer-container .footer-menu {
+    text-align: center;
+    width: 100vw;
+  }
+  footer .footer-container .footer-menu a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-decoration: underline;
+    color: #303030;
+  }
+  footer .footer-container .footer-menu a:hover {
+    color: #000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  footer .footer-container .footer-products {
+    text-align: center;
+    width: 100vw;
+  }
+  footer .footer-container .footer-products a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-decoration: underline;
+    color: #303030;
+  }
+  footer .footer-container .footer-products a:hover {
+    color: #000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  footer .footer-container .footer-copyright {
+    text-align: center;
+    margin-top: 3em;
+    padding: 2em 0px;
+    font-size: 14px;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #303030;
+    width: 100vw;
+    background-color: #ccc;
+  }
+  footer .footer-container .footer-copyright p {
+    width: 80vw;
+  }
+}
+
+@media all and (max-width: 480px) {
+  footer .footer-container {
+    padding-top: 3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer .footer-container .footer-content {
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  footer .footer-container .about-enterprise {
+    line-height: 1.5;
+    width: 80vw;
+    text-align: center;
+  }
+  footer .footer-container .about-enterprise p {
+    color: #303030;
+  }
+  footer .footer-container .about-enterprise .social-media {
+    line-height: 1.5;
+    text-align: center;
+    padding: 1em 0;
+  }
+  footer .footer-container .about-enterprise .social-media h2 {
+    font-size: 18px;
+  }
+  footer .footer-container .about-enterprise .social-media .social-icons {
+    text-decoration: none;
+  }
+  footer .footer-container .about-enterprise .social-media .social-icons:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: all ease 0.5s;
+    transition: all ease 0.5s;
+  }
+  footer .footer-container .footer-menu {
+    text-align: center;
+    width: 100vw;
+  }
+  footer .footer-container .footer-menu a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-decoration: underline;
+    color: #303030;
+  }
+  footer .footer-container .footer-menu a:hover {
+    color: #000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  footer .footer-container .footer-products {
+    text-align: center;
+    width: 100vw;
+  }
+  footer .footer-container .footer-products a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    line-height: 1.5;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-decoration: underline;
+    color: #303030;
+  }
+  footer .footer-container .footer-products a:hover {
+    color: #000;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+  }
+  footer .footer-container .footer-copyright {
+    text-align: center;
+    margin-top: 3em;
+    padding: 2em 0px;
+    font-size: 14px;
+    font-weight: bold;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #303030;
+    width: 100vw;
+    background-color: #ccc;
+  }
+  footer .footer-container .footer-copyright p {
+    width: 80vw;
+  }
+}
+/*# sourceMappingURL=main.css.map */
